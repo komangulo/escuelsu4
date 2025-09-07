@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://yoursite.com/sitemap.xml
+
+# Optimización para coaches BDSM y mentorías sexuales
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Evitar indexación de archivos no relevantes
+Disallow: /assets/
+Disallow: /*.js$
+Disallow: /*.css$
