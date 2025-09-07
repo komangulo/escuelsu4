@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Elegant BDSM Coach Design System - Dark elegance with deep red accents */
+
+@layer base {
+  :root {
+    --background: 220 15% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 15% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 15% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 65% 45%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 280 20% 15%;
+    --secondary-foreground: 0 0% 90%;
+
+    --muted: 220 15% 12%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 320 40% 25%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 15%;
+    --ring: 0 65% 45%;
+
+    /* Custom design tokens */
+    --elegant-red: 0 65% 45%;
+    --deep-purple: 280 40% 30%;
+    --dark-surface: 220 15% 10%;
+    --darker-surface: 220 15% 8%;
+    --luxury-gold: 45 90% 65%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(0 65% 45%), hsl(320 40% 25%));
+    --gradient-dark: linear-gradient(180deg, hsl(220 15% 8%), hsl(220 15% 12%));
+    --gradient-subtle: linear-gradient(135deg, hsl(220 15% 10%), hsl(280 20% 15%));
+    
+    /* Shadows */
+    --shadow-elegant: 0 20px 40px -10px hsl(0 65% 45% / 0.3);
+    --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.4);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark theme matches our primary theme */
+    --background: 220 15% 8%;
+    --foreground: 0 0% 95%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
